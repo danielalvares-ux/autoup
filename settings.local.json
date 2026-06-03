@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(awk 'BEGIN{n=0} /<div/{n++} /<\\\\/div>/{n--} {print NR, n, $0}' autoup.html)",
+      "Bash(awk '$2 < 0')",
+      "Bash(awk 'BEGIN{n=0} /<div/{n++} /<\\\\/div>/{n--} {print NR, n}' autoup.html)",
+      "Bash(awk 'NR>=1400 && NR<=1445')"
+    ]
+  }
+}
